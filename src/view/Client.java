@@ -145,7 +145,7 @@ public class Client {
         phonebookArrayListClient.get(index).setDateofbirth(LocalDate.of(edityearofbirth, editmonthofbirth, editdayofbirth));
 
         Scanner inputEmail = new Scanner(System.in);
-        System.out.println("Nhập lại email nhân viên Full Time bạn muốn sửa: ");
+        System.out.println("Nhập lại email mà bạn muốn sửa: ");
         String editEmail = inputEmail.nextLine();
 
         phonebookArrayListClient.get(index).setEmail(editEmail);
