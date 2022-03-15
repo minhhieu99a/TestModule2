@@ -5,6 +5,7 @@ import model.Phonebook;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Objects;
 import java.util.Scanner;
 import java.util.regex.Matcher;
 
@@ -156,8 +157,9 @@ public class Client {
         Scanner inputChoice = new Scanner(System.in);
         System.out.println("Nhập Y nếu bạn chắc chắn muốn xóa.");
         String choice = inputChoice.nextLine();
-        if (choice =="y") {
+        if (Objects.equals(choice, "y")) {
             phonebookArrayListClient.remove(index);
+            System.out.println("Đã xóa thành công.");
         }
         return phonebookArrayListClient;
     }
